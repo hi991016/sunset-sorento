@@ -1,0 +1,425 @@
+.servicespage {
+    .schero {
+        background: url(../img/services/hero.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .scservices {
+        background: $main-bg;
+        padding: 9% 0 0;
+        .title {
+            text-align: center;
+            width: max-content;
+            margin: auto;
+        }
+        .scservices__slide {
+            .flickity-viewport {
+                height: 100% !important;
+            }
+            margin-top: 80px;
+            position: relative;
+            height: 72vh;
+            &-item {
+                margin-right: 5vw;
+                width: 52vw;
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                color: $white-cl;
+                .content {
+                    @include mid;
+                    z-index: 10;
+                    p {
+                        font-family: "ol";
+                        font-size: 54px;
+                        line-height: 40px;
+                    }
+                }
+                .photo {
+                    img {
+                        @include midimg;
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .process-bar {
+            display: block;
+            width: 25%;
+            height: 1px;
+            background: $yellow-cl;
+            margin: auto;
+            margin-top: 56px;
+            position: relative;
+            .current {
+                display: block;
+                width: 15%;
+                height: 4px;
+                background: $yellow-cl;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .scbenefit {
+        background: $main-bg;
+        padding: 60px 0 120px 0;
+        .container {
+            .scbenefit__top {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                gap: var(--gap-grid);
+                &-left {
+                    grid-column: 1/6;
+                    .product-list {
+                        margin-top: 46px;
+                        .item {
+                            display: flex;
+                            align-items: center;
+                            &:not(:last-child) {
+                                margin-bottom: 40px;
+                            }
+                            i {
+                                flex-shrink: 0;
+                                margin-right: 20px;
+                            }
+                            p {
+                                font-family: "mr";
+                                font-size: 16px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+                &-right {
+                    grid-column: 7/13;
+                    position: relative;
+                    .overlay {
+                        width: fit-content;
+                        width: max-content;
+                        @include mid;
+                        text-align: center;
+                        .title {
+                            font-family: "csbi";
+                            font-size: 72px;
+                        }
+                        .desc {
+                            margin-top: 42px;
+                            font-family: "ol";
+                            font-size: 24px;
+                            line-height: 40px;
+                        }
+                        .btncoffee {
+                            margin: auto;
+                            margin-top: 56px;
+                        }
+                    }
+                    .sign {
+                        position: absolute;
+                        bottom: -48px;
+                        right: -80px;
+                    }
+                }
+            }
+            .scbenefit__bottom {
+                margin-top: 250px;
+                &-list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    .item {
+                        text-align: center;
+                        .number {
+                            font-family: "ol";
+                            font-size: 60px;
+                            color: $yellow-cl;
+                        }
+                        .text {
+                            margin-top: 24px;
+                            font-family: "mr";
+                            font-size: 16px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .scprice {
+        background: $third-bg;
+        padding-top: 120px;
+        position: relative;
+        &__heading {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .text-bg {
+                font-family: "ol";
+                font-size: 240px;
+                letter-spacing: 0.015em;
+                color: $main-bg;
+            }
+            .title {
+                text-align: center;
+                position: absolute;
+                bottom: -40px;
+            }
+        }
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(24%);
+            &-item {
+                background: $main-bg;
+                position: relative;
+                text-align: center;
+                border: 1px solid $yellow-cl;
+                .top,
+                .content {
+                    padding: 40px 60px;
+                }
+                .under {
+                    margin: 0px;
+                    .line {
+                        width: 50%;
+                    }
+                }
+                &.--mid {
+                    background: $black-cl url(../img/services/beside.png) no-repeat center left;
+                    background-size: 38px auto;
+                }
+                &:not(:last-child) {
+                    margin-right: 24px;
+                }
+                .circle {
+                    width: 100px;
+                    height: 100px;
+                    position: absolute;
+                    top: -48px;
+                    right: -24px;
+                }
+                .name {
+                    font-family: "mr";
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: $white-cl;
+                }
+                .price {
+                    font-family: "ol";
+                    font-size: 60px;
+                    line-height: 74px;
+                    color: $yellow-cl;
+                }
+                .person {
+                    font-family: "mr";
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: $yellow-cl;
+                }
+                .btncoffee {
+                    margin: auto;
+                    margin-top: 40px;
+                }
+                .content {
+                    p {
+                        font-family: "ol";
+                        font-size: 24px;
+                        line-height: 40px;
+                        color: $white-cl;
+                        &:not(:last-child) {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .scphilosophy {
+        background: $main-bg;
+        padding: 200px 0 120px 0;
+        .container-fluid {
+            display: flex;
+            .scphilosophy__content {
+                text-align: center;
+                padding: 0 24px;
+                .desc {
+                    margin-top: 24px;
+                    font-family: "ci";
+                    font-size: 24px;
+                    line-height: 40px;
+                }
+                .paragraph {
+                    margin-top: 56px;
+                    font-family: "mr";
+                    font-size: 16px;
+                    list-style: 30px;
+                }
+                .sign {
+                    margin-top: 24px;
+                }
+            }
+            .scphilosophy__beside {
+                flex-shrink: 0;
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@include xs {
+    .servicespage {
+        .scservices {
+            .scservices__slide {
+                &-item {
+                    .content {
+                        p {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        .scbenefit {
+            .container {
+                .scbenefit__top {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &-right {
+                        .overlay {
+                            .title {
+                                font-size: 60px;
+                            }
+                        }
+                        .sign {
+                            display: none;
+                        }
+                    }
+                }
+                .scbenefit__bottom {
+                    margin-top: 100px;
+                    &-list {
+                        flex-direction: column;
+                        .item {
+                            &:not(.item:last-child) {
+                                margin-bottom: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .scprice {
+            &__heading {
+                .text-bg {
+                    font-size: 160px;
+                }
+            }
+            &__list {
+                flex-direction: column;
+                transform: translateY(8%);
+                &-item {
+                    .content {
+                        padding: 20px 30px;
+                    }
+                    .circle {
+                        display: none;
+                    }
+                    &:not(:last-child) {
+                        margin-right: 0px;
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+        .scphilosophy {
+            .container-fluid {
+                flex-direction: column;
+                .scphilosophy__content {
+                    margin: 32px 0;
+                }
+            }
+        }
+    }
+}
+
+@include sm {
+    .servicespage {
+        .scservices {
+            .scservices__slide {
+                &-item {
+                    .content {
+                        p {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        .scbenefit {
+            .container {
+                .scbenefit__top {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &-right {
+                        .sign {
+                            display: none;
+                        }
+                    }
+                }
+                .scbenefit__bottom {
+                    margin-top: 100px;
+                    &-list {
+                        flex-direction: column;
+                        .item {
+                            &:not(.item:last-child) {
+                                margin-bottom: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .scprice {
+            &__heading {
+                .text-bg {
+                    font-size: 160px;
+                }
+            }
+            &__list {
+                flex-direction: column;
+                transform: translateY(8%);
+                &-item {
+                    .content {
+                        padding: 20px 30px;
+                    }
+                    &:not(:last-child) {
+                        margin-right: 0px;
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+        .scphilosophy {
+            .container-fluid {
+                flex-direction: column;
+                .scphilosophy__content {
+                    margin: 32px 0;
+                }
+            }
+        }
+    }
+}
