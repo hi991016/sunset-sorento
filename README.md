@@ -1,0 +1,1 @@
+The character and philosophy of our type of cuisine, which follows the ancestral technique of using different types of firewood, fire, charcoal and the scented trace of the smoke, inherently results in a limitation on the number of diners that we can accommodate without sacrificing our essence.
